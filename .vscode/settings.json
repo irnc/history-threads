@@ -1,0 +1,6 @@
+{
+    "typescript.preferences.quoteStyle": "single",
+    "files.exclude": {
+        "**/*.js": { "when": "$(basename).ts" }
+    }
+}

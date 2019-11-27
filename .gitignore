@@ -1,0 +1,8 @@
+node_modules
+.cache/*
+!.cache/.gitkeep
+src/**/*.jpg
+.env
+
+# These files are compiled from TypeScript
+/tools/**/*.js

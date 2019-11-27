@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Ніці Гродна"
+theme = "ananke"
+
+[params]
+  mainSections = [ "updates" ]

@@ -1,0 +1,11 @@
+resource:
+  - https://archiwum.allegro.pl/oferta/szkola-podof-dywizjonu-art-plot-grodno-1927-i7112136450.html
+images:
+  - url: https://4.allegroimg.com/original/0c1647/4d5c27f641a0bbafa4859b923a34
+    file: src/allegro-archiwum/7112136450.jpg
+threads:
+  - Szkoła podoficerska Grodno
+notes:
+  - Szkoła podoficerska samodzielnego dywizjonu artylerii przeciwlotniczej Nr 1
+dates:
+  - 1927-04-13

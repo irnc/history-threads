@@ -1,0 +1,43 @@
+{
+  "name": "history-threads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "archive.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "enhance-src": "node tools/enhance-src.js",
+    "build-website-index-from-src": "node tools/build-website-index-from-src.js",
+    "thread-allegro-archiwum": "node tools/thread-allegro-archiwum.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cache-manager": "^2.10.0",
+    "cache-manager-fs": "^1.0.8",
+    "cache-manager-fs-binary": "^1.0.4",
+    "cache-manager-fs-hash": "0.0.7",
+    "cheerio": "^1.0.0-rc.3",
+    "debug": "^4.1.1",
+    "glob": "^7.1.5",
+    "glob-promise": "^3.4.0",
+    "make-dir": "^3.0.0",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "puppeteer": "^2.0.0",
+    "slugify": "^1.3.5",
+    "yaml": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.14",
+    "@types/debug": "^4.1.5",
+    "@types/jest": "^24.0.23",
+    "@types/lodash": "^4.14.149",
+    "@types/node-fetch": "^2.5.4",
+    "@types/puppeteer": "^2.0.0",
+    "@types/yaml": "^1.2.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.2"
+  }
+}

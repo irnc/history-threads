@@ -1,0 +1,39 @@
+- resource:
+    - https://hrodna.life/articles/nahodka-v-starom-dome/
+    - https://www.facebook.com/susanin.grodno/posts/2690413937665190
+  threads:
+    - Szkoła podoficerska Grodno
+    - Głębocki Zenon
+    - Głębocka Maria
+  dates:
+    - 1899
+    - 1927
+    - 1938
+- resource:
+    - https://archiwum.allegro.pl/oferta/szkola-podof-dywizjonu-art-plot-grodno-1927-i7112136450.html
+  images:
+    - url: https://4.allegroimg.com/original/0c1647/4d5c27f641a0bbafa4859b923a34
+      file: src/allegro-archiwum/7112136450.jpg
+  threads:
+    - Szkoła podoficerska Grodno
+  notes:
+    - Szkoła podoficerska samodzielnego dywizjonu artylerii przeciwlotniczej Nr 1
+  dates:
+    - 1927-04-13
+- resource:
+    - https://archiwum.allegro.pl/oferta/gen-f-kleeberg-szkola-podof-29-pap-grodno-i7611417798.html
+  images:
+    - url: https://4.allegroimg.com/original/0c34b8/49e1259c45f0bd7d813c9cca5574
+      file: src/allegro-archiwum/7611417798-1.jpg
+    - url: https://a.allegroimg.com/original/0c5bdb/f8561f3a44ee9b05a6ae9b45440a
+      file: src/allegro-archiwum/7611417798-2.jpg
+    - url: https://c.allegroimg.com/original/0c98c9/58ed7c8b47619792eff8880caa4c
+      file: src/allegro-archiwum/7611417798-3.jpg
+  threads:
+    - Szkoła podoficerska Grodno
+    - Franciszek Kleeberg
+  notes:
+    - >
+      Szkoła Podoficerska 29 pułku artylerii polowej - Grodno. Widoczny generał
+      brygady Franciszek Kleeberg.
+    - Pieczątka Fot. "VENUS" P.Mełamed Grodno, Dominikańska 9.

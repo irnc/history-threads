@@ -1,0 +1,16 @@
+- resource:
+    - https://www.facebook.com/photo.php?fbid=2337466862959901&set=a.348512821855325&type=1&theater
+  threads:
+    - Стары мост
+  facebook:
+    canonicalPhotoUrl: https://www.facebook.com/photo.php?fbid=2337466862959901
+    content:
+      comments:
+        count: 12
+        url: https://www.facebook.com/susanin.grodno/posts/2337470272959560
+      author:
+        name: Rasl Kulevich
+        url: https://www.facebook.com/susanin.grodno
+      time:
+        utime: 1555912177
+        formatted: 4/22/19, 8:49 AM
