@@ -29,6 +29,7 @@ export default class UpdatesBuilder {
         YAML.stringify({
           // title is used by Hugo
           title: basename(file).replace('.yml', ''),
+          tags: data.threads.sort(),
           date: stats.birthtime,
           lastmod: stats.mtime,
         }) +
