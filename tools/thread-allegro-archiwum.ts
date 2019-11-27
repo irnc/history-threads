@@ -1,11 +1,11 @@
-const fs = require('fs');
-const cheerio = require('cheerio');
-const fetch = require('node-fetch');
-const moment = require('moment');
-const path = require('path');
-const makeDir = require('make-dir');
-const YAML = require('yaml');
-const { temporaryCache, imageCache } = require('./cache');
+import * as fs from 'fs';
+import * as cheerio from 'cheerio';
+import fetch from 'node-fetch';
+import * as moment from 'moment';
+import * as path from 'path';
+import * as makeDir from 'make-dir';
+import * as YAML from 'yaml';
+import { temporaryCache, imageCache } from './cache';
 
 const fetchText = async (url) => {
   const response = await fetch(url);

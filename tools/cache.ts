@@ -4,7 +4,7 @@ const fsBinaryStore = require('cache-manager-fs-binary');
 
 const CACHE_DIR = `${__dirname}/../.cache`;
 
-const temporaryCache = cacheManager.caching({
+export const temporaryCache = cacheManager.caching({
   store: fsHashStore,
   options: {
     ttl: 60 * 60 * 24 /* seconds */,
@@ -14,7 +14,7 @@ const temporaryCache = cacheManager.caching({
   }
 });
 
-const imageCache = cacheManager.caching({
+export const imageCache = cacheManager.caching({
   store: fsBinaryStore,
   options: {
       reviveBuffers: false,
@@ -25,5 +25,3 @@ const imageCache = cacheManager.caching({
       preventfill: false
   }
 });
-
-module.exports = { temporaryCache, imageCache };
