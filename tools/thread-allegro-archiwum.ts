@@ -85,7 +85,8 @@ const run = async ({ url }) => {
   const data = {
     ...overwrite,
     threads: [
-      'allegro',
+      // NOTE I think source should not be in threads
+      // 'allegro',
     ],
   };
 
