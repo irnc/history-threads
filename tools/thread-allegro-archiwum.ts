@@ -37,6 +37,19 @@ const saveImage = async ({ url, file }) => {
   });
 };
 
+/**
+ * Change scaled image URL to URL of originally uploaded image
+ *
+ * Somewhere between 2019-11-06 and 2019-11-28 Allegro Archiwum started to use
+ * URLs to scaled images. Because we knew old URLs it is easy to construct them
+ * again.
+ *
+ * @param url img src
+ */
+const toOriginal = (url: string) => {
+  return url.replace('s1024', 'original');
+}
+
 const run = async ({ url }) => {
   const text = await temporaryCache.wrap(url, () => fetchText(url));
   const $ = cheerio.load(text);
@@ -44,8 +57,8 @@ const run = async ({ url }) => {
   // NOTE .jpg files are ignored by Git to reduce repo clone time for collaborators
   // TODO save images to dat archive
   const file = `src/allegro-archiwum/${offerId}.jpg`;
-  const image = $('.asi-gallery__image').attr('src');
-  const images = $('.asi-gallery__thumbnail-image').map((i, img) => $(img).attr('src')).get();
+  const image = toOriginal($('.asi-gallery__image').attr('src'));
+  const images = $('.asi-gallery__thumbnail-image').map((i, img) => toOriginal($(img).attr('src'))).get();
   const imagesArchive = images.map((url, i) => ({
     url,
     file: file.replace('.jpg', `-${i + 1}.jpg`),
