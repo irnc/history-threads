@@ -21,7 +21,11 @@ const run = async ({ projectRoot }) => {
   const files = await fileIterator.glob();
   const threadIndex = [];
 
-  files.map(FileIterator.readYaml).forEach((data) => {
+  files.map(FileIterator.readYaml).forEach((data, i) => {
+    if (!Array.isArray(data.threads)) {
+      throw new Error(`threads is not an array in '${files[i]}'`);
+    }
+
     data.threads.forEach((thread) => {
       if (!threadIndex[thread]) {
         threadIndex[thread] = [];
