@@ -12,8 +12,9 @@
 
 ## Зрабіць
 
-- праіндэксіраваць http://oldgrodno.by/
--
+- праіндэксіраваць
+  - http://oldgrodno.by/
+  - https://forum.grodno.net/index.php?topic=139550.4800
 
 # Дадзеные
 
