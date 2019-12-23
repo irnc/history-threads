@@ -19,6 +19,7 @@
     "cache-manager-fs-hash": "0.0.7",
     "cheerio": "^1.0.0-rc.3",
     "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
     "glob": "^7.1.5",
     "glob-promise": "^3.4.0",
     "make-dir": "^3.0.0",

@@ -1,6 +1,7 @@
 import { URL, URLSearchParams } from 'url';
 import * as puppeteer from 'puppeteer';
 import debugFactory from 'debug';
+import * as assert from 'assert';
 import AttachmentDownloader from './AttachmentDownloader';
 
 const debug = debugFactory('historic-threads:facebook-enhancer');
@@ -18,7 +19,8 @@ const trimTrackingParams = (url: string) => {
 
 export default class FacebookEnhancer {
   constructor() {
-
+    assert(process.env.FACEBOOK_EMAIL, 'FACEBOOK_EMAIL env var not set');
+    assert(process.env.FACEBOOK_PASSWORD, 'FACEBOOK_PASSWORD env var not set');
   }
 
   async enhance(resource: string) {
@@ -72,8 +74,8 @@ export default class FacebookEnhancer {
           const result = {
             comments: {},
             author: {
-              name: linkToAuthor.getAttribute('title'),
-              url: linkToAuthor.href,
+              name: linkToAuthor && linkToAuthor.getAttribute('title'),
+              url: linkToAuthor && linkToAuthor.href,
             },
             time: {
               // TODO is it UTC?

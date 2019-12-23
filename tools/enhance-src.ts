@@ -4,6 +4,17 @@
 // fetch additional data about resources
 // store updated YAML
 
+/*
+
+How to use:
+1. copy .env.sample to .env and provide your credentials
+2. npm run enhance-src src/2019/11/2019-11-29-fara-rasl.yml
+
+Options:
+- `DEBUG=historic-threads:facebook-enhancer` to see progress with Facebook
+
+*/
+
 import FileIterator from './sources/FileIterator';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -15,11 +26,21 @@ import UpdatesBuilder from './build-website/UpdatesBuilder';
 import FacebookEnhancer from './enhance-sources/FacebookEnhancer';
 import SourceFile from './sources/SourceFile';
 
+require('dotenv').config();
+
 const run = async ({ projectRoot, pattern }) => {
   const fileIterator = new FileIterator({ projectRoot, pattern });
   const files = await fileIterator.glob();
 
-  files.map(FileIterator.readYaml).forEach(async (data, i) => {
+  const readYaml = (file) => {
+    try {
+      return FileIterator.readYaml(file);
+    } catch (err) {
+      throw new Error(`failed to parse YAML from '${file}': ${err.message}`);
+    }
+  };
+
+  files.map(readYaml).forEach(async (data, i) => {
     const sourceFile = files[i];
     const mainResourceUrl = new URL(data.resource[0]);
 
