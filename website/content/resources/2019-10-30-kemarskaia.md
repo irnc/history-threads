@@ -1,5 +1,6 @@
 ---
-title: Змены ў 2019-10-30-kemarskaia
+title: 2019-10-30-kemarskaia
+slug: 2019-10-30-kemarskaia
 tags:
   - Валентина Кемарская
   - Гродно, Северная улица
@@ -9,4 +10,4 @@ date: 2019-10-30T16:37:54.709Z
 lastmod: 2019-10-30T21:09:32.532Z
 ---
 
-TODO fetch commit history from GitHub?
+<!-- Замяніце гэты радок-каментар на артыкул. -->

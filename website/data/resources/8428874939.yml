@@ -1,0 +1,10 @@
+resource:
+  - https://archiwum.allegro.pl/oferta/pocztowka-grodno-i8428874939.html
+images:
+  - url: https://a.allegroimg.com/original/0c77c3/d580464d45edab4ab901a5920c81
+    file: src/allegro-archiwum/8428874939-1.jpg
+  - url: https://a.allegroimg.com/original/0c9b5c/228ead09494d8788aabbeeb50ea7
+    file: src/allegro-archiwum/8428874939-2.jpg
+threads:
+  - Altes Schloss
+  - Стары замак

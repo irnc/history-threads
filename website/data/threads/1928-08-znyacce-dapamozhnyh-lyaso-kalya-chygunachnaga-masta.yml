@@ -1,0 +1,11 @@
+- resource:
+    - https://audiovis.nac.gov.pl/obraz/82421
+  images:
+    - url: https://audiovis.nac.gov.pl/i/PIC/PIC_1-G-3322.jpg
+  threads:
+    - Железнодорожный мост
+    - 1928-08 зняцце дапаможных лясоў каля чыгуначнага маста
+  nac:
+    description: |
+      Most kolejowy na Niemnie w Grodnie - usuwanie rusztowań pomocniczych.
+    date: 1928-08

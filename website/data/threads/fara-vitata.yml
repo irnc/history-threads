@@ -1,0 +1,18 @@
+- resource:
+    - https://www.facebook.com/photo.php?fbid=2757138064326110&set=a.348512821855325&type=3&theater
+  threads:
+    - Фара Вітаўта
+    - Советская площадь
+  facebook:
+    canonicalPhotoUrl: https://www.facebook.com/photo.php?fbid=2757138064326110
+    content:
+      comments:
+        count: 12
+        url: https://www.facebook.com/susanin.grodno/posts/2757090010997582
+      author:
+        name: Rasl Kulevich
+        url: https://www.facebook.com/susanin.grodno
+        linkToAuthorFound: true
+      time:
+        utime: 1575033070
+        formatted: 11/29/19, 4:11 PM

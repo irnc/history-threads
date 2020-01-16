@@ -1,0 +1,23 @@
+- resource:
+    - https://audiovis.nac.gov.pl/obraz/87145/h:164/
+    - https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/5949273/
+  threads:
+    - Dorożka w Grodnie
+    - Brygidzka
+  images:
+    - url: https://audiovis.nac.gov.pl/i/PIC/PIC_1-G-4069.jpg
+  resourceId: NAC:1-G-4069
+  nac:
+    attributes:
+      Tytuł tematu: Dorożka w Grodnie
+      Opis obrazu: Dorożka na ul. Brygidzkiej w Grodnie.
+      Data wydarzenia: ""
+      Miejsce: Grodno
+      Osoby widoczne: ""
+      Osoby niewidoczne: ""
+      Hasła przedmiotowe: komunikacja,
+      Inne nazwy własne: ""
+      Zakład fotograficzny: ""
+      Autor: ""
+      Zespół: Koncern Ilustrowany Kurier Codzienny - Archiwum Ilustracji
+      Sygnatura: 1-G-4069

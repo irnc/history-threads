@@ -1,0 +1,12 @@
+- resource:
+    - https://forum.grodno.net/index.php?topic=139550.msg19171006#msg19171006
+  images:
+    - file: src/2019/12/2019-12-09-railway.jpg
+  threads:
+    - railways
+    - паравоз
+  author:
+    - username: Halfback
+      url: https://forum.grodno.net/index.php?action=profile;u=147794
+  attribution:
+    - https://www.etoretro.ru/
