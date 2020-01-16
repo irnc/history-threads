@@ -25,6 +25,7 @@ import * as makeDir from 'make-dir';
 import UpdatesBuilder from './build-website/UpdatesBuilder';
 import FacebookEnhancer from './enhance-sources/FacebookEnhancer';
 import SourceFile from './sources/SourceFile';
+import NacEnhancer from './enhance-sources/NacEnhancer';
 
 require('dotenv').config();
 
@@ -51,6 +52,12 @@ const run = async ({ projectRoot, pattern }) => {
       fs.promises.writeFile(sourceFile.replace('.yml', '.jpg'), facebook.imageBuffer);
       const fileX = new SourceFile(sourceFile);
       fileX.merge({ facebook: _.omit(facebook, 'imageBuffer') });
+    } else if (mainResourceUrl.host === 'audiovis.nac.gov.pl') {
+      const enhancer = new NacEnhancer();
+      const data = await enhancer.enhance(mainResourceUrl.href);
+
+      const fileX = new SourceFile(sourceFile);
+      fileX.merge(data);
     }
   });
 };
