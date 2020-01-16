@@ -1,0 +1,15 @@
+resource:
+  - https://archiwum.allegro.pl/oferta/grodno-widok-ogolny-i-katedra-bulhak-bdb-i8334485616.html
+images:
+  - url: https://a.allegroimg.com/original/0c15b1/c6578d934437922d2646ec4491b2
+    file: src/allegro-archiwum/8334485616-1.jpg
+  - url: https://a.allegroimg.com/original/0c5de8/9b9984ef4edeb3949e1ddd6c2a42
+    file: src/allegro-archiwum/8334485616-2.jpg
+threads:
+  - вуліца Карла Маркса
+  - вуліца Карла Маркса, 22
+  - Фарный
+  - Jan Bułhak
+date:
+  after: 1886
+  description: Год пабудовы дома з сучасным адрасам вуліца Карла Маркса, 22

@@ -1,0 +1,8 @@
+resource:
+  - https://archiwum.allegro.pl/oferta/grodno-palac-plac-1918-rrrr-i8411591423.html
+images:
+  - url: https://a.allegroimg.com/original/0c586f/682668704c898684cb9403443430
+    file: src/allegro-archiwum/8411591423-1.jpg
+  - url: https://a.allegroimg.com/original/0cffe0/7c83b75b4e4b91d7141e0cb27118
+    file: src/allegro-archiwum/8411591423-2.jpg
+threads: []

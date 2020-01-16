@@ -1,0 +1,12 @@
+- resource:
+    - https://archiwum.allegro.pl/oferta/grodno-i8327981473.html
+  images:
+    - url: https://a.allegroimg.com/original/0cb7ee/0d8ee9354a41b8c2f746582bda68
+      file: src/allegro-archiwum/8327981473-1.jpg
+    - url: https://a.allegroimg.com/original/0c82a5/457b2a2f46e29bfcc8cab2488da1
+      file: src/allegro-archiwum/8327981473-2.jpg
+  inscription:
+    - ul. Orzeszkowej
+    - Orzeszkowahaus
+  threads:
+    - вуліца Элізы Ажэшка

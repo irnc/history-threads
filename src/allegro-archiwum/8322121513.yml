@@ -1,0 +1,9 @@
+resource:
+  - https://archiwum.allegro.pl/oferta/grodno-plac-wolnosci-oryginalna-foto-1931-i8322121513.html
+images:
+  - url: https://a.allegroimg.com/original/0ca590/df1a0e2f4883ae3372a89f33be47
+    file: src/allegro-archiwum/8322121513.jpg
+threads:
+  - Plac Wolności
+  - плошча Тызенгаўза
+date: 1931

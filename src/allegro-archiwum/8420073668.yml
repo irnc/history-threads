@@ -1,0 +1,8 @@
+resource:
+  - https://archiwum.allegro.pl/oferta/grodno-dzis-bialorus-przed-1939-r-i8420073668.html
+images:
+  - url: https://a.allegroimg.com/original/0cf213/b97369364c0593f1174497800720
+    file: src/allegro-archiwum/8420073668-1.jpg
+  - url: https://a.allegroimg.com/original/0c5683/f221aaab4ad08e59b660f4bfef7f
+    file: src/allegro-archiwum/8420073668-2.jpg
+threads: []
