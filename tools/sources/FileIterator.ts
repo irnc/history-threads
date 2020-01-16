@@ -12,6 +12,9 @@ export default class FileIterator {
     this.pattern = pattern;
   }
 
+  /**
+   * @returns {string[]} Absolute filenames
+   */
   async glob() {
     const { projectRoot, pattern } = this;
     const files = await glob.promise(pattern, { cwd: projectRoot });

@@ -2,14 +2,15 @@
 {{ $data := index .Site.Data.threads $slug }}
 <section>
   <h1 class="f2">Resources</h1>
+  <!-- Each item of $data is a source file -->
   {{ range $data }}
-
     <h1 class="f3">{{ (urls.Parse (index .resource 0)).Host }} </h1>
     <ul>
-        {{ range .resource }}
-          {{ $url := urls.Parse . }}
-          <a href="{{ . }}">{{ $url.Host }}</a>
-        {{ end }}
+      <!-- Each source file may have multiple resources -->
+      {{ range .resource }}
+        {{ $url := urls.Parse . }}
+        <a href="{{ . }}">{{ $url.Host }}</a>
+      {{ end }}
     </ul>
 
     {{/* TODO use https://github.com/liwenyip/hugo-easy-gallery */}}

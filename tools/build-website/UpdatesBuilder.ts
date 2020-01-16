@@ -28,12 +28,15 @@ export default class UpdatesBuilder {
         '---\n' +
         YAML.stringify({
           // title is used by Hugo
-          title: basename(file).replace('.yml', ''),
+          title: `Змены ў ${basename(file).replace('.yml', '')}`,
           tags: data.threads.sort(),
           date: stats.birthtime,
           lastmod: stats.mtime,
         }) +
-        '---\n'
+        '---\n' +
+        '\n' +
+        'TODO fetch commit history from GitHub?' +
+        '\n'
       );
     });
   }

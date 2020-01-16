@@ -6,6 +6,7 @@ import * as _ from 'lodash';
 import slugify from 'slugify';
 import * as makeDir from 'make-dir';
 import UpdatesBuilder from './build-website/UpdatesBuilder';
+import ResourcesBuilder from './build-website/ResourcesBuilder';
 
 /*
 
@@ -64,6 +65,10 @@ const run = async ({ projectRoot }) => {
   // Write website/content/updates/
   const updatesBuilder = new UpdatesBuilder({ fileIterator, projectRoot });
   await updatesBuilder.build();
+
+  // Write website/content/resources/
+  const resourcesBuilder = new ResourcesBuilder({ fileIterator, projectRoot });
+  await resourcesBuilder.build();
 };
 
 run({ projectRoot: path.join(__dirname, '..') });
