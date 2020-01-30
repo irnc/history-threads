@@ -3,4 +3,8 @@ resource:
 images:
   - url: https://a.allegroimg.com/original/0c8095/9c8f8285478381f40115fbb7ad3b
     file: src/allegro-archiwum/8353664561.jpg
-threads: []
+threads:
+  - Стары замак
+  - Новы замак
+inscription:
+  - Zamek Batorego

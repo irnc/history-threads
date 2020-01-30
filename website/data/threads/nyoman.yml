@@ -1,0 +1,27 @@
+- resource:
+    - https://archiwum.allegro.pl/oferta/grodno-panorama-miasta-lata-szescdziesiate-i8369026856.html
+  images:
+    - url: https://a.allegroimg.com/original/0cadbf/c31ea0214348831f8766e2bbd456
+      file: src/allegro-archiwum/8369026856.jpg
+  threads:
+    - Нёман
+    - Chorzów 1960
+    - другі завулак Белуша
+    - сёмы Прыгарадны завулак
+  description: >
+    Panorama miasta - lata sześćdziesiąte (zdjęcie)
+
+    Brzeg Niemna na wysokości Budynku Wodociągów Miejskich. Powyżej koszary dawnego 29 PAL (obecnie Straży Granicznej).
+- resource:
+    - https://archiwum.allegro.pl/oferta/grodno-panorama-miasta-i-brzeg-niemna-i8369028424.html
+  images:
+    - url: https://a.allegroimg.com/original/0c7858/5a61dc174310bb78855d7d8e0a30
+      file: src/allegro-archiwum/8369028424.jpg
+  threads:
+    - Нёман
+    - Chorzów 1960
+  description: |
+    Grodno - Panorama miasta i brzeg Niemna (zdjęcie)
+    Brzeg Niemna na wysokości starego cmentarza katolickiego.
+
+    Здымак з боку Румлёва на другі завулак Белуша

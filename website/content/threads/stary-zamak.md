@@ -2,7 +2,8 @@
 title: Стары замак
 thread: Стары замак
 tags:
-  - Altes Schloss
   - Стары замак
+  - Новы замак
+  - Altes Schloss
 slug: stary-zamak
 ---

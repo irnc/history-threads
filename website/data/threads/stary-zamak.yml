@@ -1,4 +1,14 @@
 - resource:
+    - https://archiwum.allegro.pl/oferta/grodno-zamek-batorego-reprodukcja-i8353664561.html
+  images:
+    - url: https://a.allegroimg.com/original/0c8095/9c8f8285478381f40115fbb7ad3b
+      file: src/allegro-archiwum/8353664561.jpg
+  threads:
+    - Стары замак
+    - Новы замак
+  inscription:
+    - Zamek Batorego
+- resource:
     - https://archiwum.allegro.pl/oferta/pocztowka-grodno-i8428874939.html
   images:
     - url: https://a.allegroimg.com/original/0c77c3/d580464d45edab4ab901a5920c81
