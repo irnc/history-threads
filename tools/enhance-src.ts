@@ -11,10 +11,11 @@ How to use:
 2. npm run enhance-src src/2019/11/2019-11-29-fara-rasl.yml
 
 Options:
-- `DEBUG=historic-threads:facebook-enhancer` to see progress with Facebook
+- `DEBUG=history-threads:enhance:facebook` to see progress with Facebook
 
 */
 
+import debugFactory from 'debug';
 import FileIterator from './sources/FileIterator';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -29,6 +30,8 @@ import NacEnhancer from './enhance-sources/NacEnhancer';
 
 require('dotenv').config();
 
+const debug = debugFactory('history-threads:enhance');
+
 const run = async ({ projectRoot, pattern }) => {
   const fileIterator = new FileIterator({ projectRoot, pattern });
   const files = await fileIterator.glob();
@@ -41,9 +44,13 @@ const run = async ({ projectRoot, pattern }) => {
     }
   };
 
+  debug(`running enhance on ${files.length} files`);
+
   files.map(readYaml).forEach(async (data, i) => {
     const sourceFile = files[i];
     const mainResourceUrl = new URL(data.resource[0]);
+
+    debug(`enhancing ${path.basename(sourceFile)} using ${mainResourceUrl.host}`);
 
     if (mainResourceUrl.host.endsWith('facebook.com')) {
       const enhancer = new FacebookEnhancer();

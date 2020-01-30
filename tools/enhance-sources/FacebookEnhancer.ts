@@ -4,7 +4,7 @@ import debugFactory from 'debug';
 import * as assert from 'assert';
 import AttachmentDownloader from './AttachmentDownloader';
 
-const debug = debugFactory('historic-threads:facebook-enhancer');
+const debug = debugFactory('history-threads:enhance:facebook');
 
 const trimTrackingParams = (url: string) => {
   const parsed = new URL(url);

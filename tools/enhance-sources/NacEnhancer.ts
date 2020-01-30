@@ -5,7 +5,7 @@ import * as assert from 'assert';
 import * as _ from 'lodash';
 import AttachmentDownloader from './AttachmentDownloader';
 
-const debug = debugFactory('historic-threads:nac-enhancer');
+const debug = debugFactory('history-threads:enhance:nac');
 
 export default class NacEnhancer {
   async enhance(resource: string) {
