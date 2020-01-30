@@ -35,9 +35,6 @@
 
 # Прагляд
 
-- `(cd website && hugo server)`
-
-# Распрацоўка
-
 - [`brew install hugo`](https://gohugo.io/getting-started/installing/)
 - `(cd website && hugo server)`
+- `open http://localhost:1313/`
