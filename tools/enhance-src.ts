@@ -56,7 +56,11 @@ const run = async ({ projectRoot, pattern }) => {
       const enhancer = new FacebookEnhancer();
       const facebook = await enhancer.enhance(mainResourceUrl.href);
 
-      fs.promises.writeFile(sourceFile.replace('.yml', '.jpg'), facebook.imageBuffer);
+      // Here we assume that facebook post contains only one image, which is
+      // not always true, e.g.
+      // https://www.facebook.com/susanin.grodno/posts/2893801830659732
+      await fs.promises.writeFile(sourceFile.replace('.yml', '.jpg'), facebook.imageBuffer);
+
       const fileX = new SourceFile(sourceFile);
       fileX.merge({ facebook: _.omit(facebook, 'imageBuffer') });
     } else if (mainResourceUrl.host === 'audiovis.nac.gov.pl') {

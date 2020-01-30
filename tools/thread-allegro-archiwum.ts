@@ -58,6 +58,8 @@ const run = async ({ url }) => {
   // TODO save images to dat archive
   const file = `src/allegro-archiwum/${offerId}.jpg`;
   const image = toOriginal($('.asi-gallery__image').attr('src'));
+  // TODO fetch images from description when thumbnails point to 404 urls
+  // e.g. https://archiwum.allegro.pl/oferta/grodno-widok-ogolny-i-katedra-bulhak-bdb-i8334485616.html
   const images = $('.asi-gallery__thumbnail-image').map((i, img) => toOriginal($(img).attr('src'))).get();
   const imagesArchive = images.map((url, i) => ({
     url,

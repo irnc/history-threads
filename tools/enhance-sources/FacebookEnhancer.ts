@@ -124,6 +124,7 @@ export default class FacebookEnhancer {
     }
 
     return {
+      note: 'TODO improve FacebookEnhancer to handle this resource',
       pathname,
       query: parsed.searchParams,
     };

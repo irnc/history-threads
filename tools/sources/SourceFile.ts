@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import * as YAML from 'yaml';
 import * as _ from 'lodash';
 
+// TODO rename SourceFile to SourceFileEditor
 export default class SourceFile {
   filepath: string;
   data: object;
