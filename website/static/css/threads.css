@@ -1,0 +1,7 @@
+.x-list-inline li {
+  display: inline;
+}
+
+.x-list-inline li:not(:first-child)::before {
+  content: "\2014";
+}

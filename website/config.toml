@@ -5,3 +5,4 @@ theme = "ananke"
 
 [params]
   mainSections = [ "updates" ]
+  custom_css = [ "css/threads.css" ]
