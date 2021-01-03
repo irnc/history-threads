@@ -19,10 +19,13 @@ import ResourcesBuilder from './build-website/ResourcesBuilder';
 
 const run = async ({ projectRoot }) => {
   const fileIterator = new FileIterator({ projectRoot });
-  const files = await fileIterator.glob();
+  const files = await fileIterator.globRelative();
   const threadIndex = [];
 
-  files.map(FileIterator.readYaml).forEach((data, i) => {
+  files.forEach((relativeFilePath, i) => {
+    const absFile = fileIterator.absolute(relativeFilePath);
+    const data = FileIterator.readYaml(absFile);
+
     if (!Array.isArray(data.threads)) {
       throw new Error(`threads is not an array in '${files[i]}'`);
     }
@@ -32,7 +35,7 @@ const run = async ({ projectRoot }) => {
         threadIndex[thread] = [];
       }
 
-      threadIndex[thread].push({ ...data });
+      threadIndex[thread].push({ ...data, src: relativeFilePath });
     });
   });
 

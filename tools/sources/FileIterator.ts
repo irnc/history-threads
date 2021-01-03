@@ -16,9 +16,18 @@ export default class FileIterator {
    * @returns {string[]} Absolute filenames
    */
   async glob() {
-    const { projectRoot, pattern } = this;
-    const files = await glob.promise(pattern, { cwd: projectRoot });
+    const { projectRoot } = this;
+    const files = await this.globRelative();
     return files.map(relativePath => path.join(projectRoot, relativePath));
+  }
+
+  globRelative() {
+    const { projectRoot, pattern } = this;
+    return glob.promise(pattern, { cwd: projectRoot });
+  }
+
+  absolute(file: string) {
+    return path.join(this.projectRoot, file);
   }
 
   async stat() {
