@@ -9,6 +9,7 @@
     filarami.
   images:
     - url: https://audiovis.nac.gov.pl/i/PIC/PIC_1-G-3315.jpg
+  src: src/2019/12/2019-12-17-railway-bridge-1928-nac-82375.yml
 - resource:
     - https://audiovis.nac.gov.pl/obraz/82421
   images:
@@ -20,6 +21,7 @@
     description: |
       Most kolejowy na Niemnie w Grodnie - usuwanie rusztowań pomocniczych.
     date: 1928-08
+  src: src/2019/12/2019-12-17-railway-bridge-1928-nac-82421.yml
 - resource:
     - https://www.facebook.com/susanin.grodno/posts/2797400100299906
   threads:
@@ -29,3 +31,4 @@
     снимке ее прадедушка, который работал в Гродно кузнецом и ещё несколько
     человек. Они строили Старый мост, тогда он назывался им. Пилсудского. Меня
     впечатлил водолаз и его костюм.
+  src: src/2019/12/2019-12-17-railway-bridge-1928.yml

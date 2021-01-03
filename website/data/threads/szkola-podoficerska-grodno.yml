@@ -9,6 +9,7 @@
     - 1899
     - 1927
     - 1938
+  src: src/2019/10/2019-10-30-szkola-podoficerska.yml
 - resource:
     - https://archiwum.allegro.pl/oferta/szkola-podof-dywizjonu-art-plot-grodno-1927-i7112136450.html
   images:
@@ -20,6 +21,7 @@
     - Szkoła podoficerska samodzielnego dywizjonu artylerii przeciwlotniczej Nr 1
   dates:
     - 1927-04-13
+  src: src/allegro-archiwum/7112136450.yml
 - resource:
     - https://archiwum.allegro.pl/oferta/gen-f-kleeberg-szkola-podof-29-pap-grodno-i7611417798.html
   images:
@@ -37,3 +39,4 @@
       Szkoła Podoficerska 29 pułku artylerii polowej - Grodno. Widoczny generał
       brygady Franciszek Kleeberg.
     - Pieczątka Fot. "VENUS" P.Mełamed Grodno, Dominikańska 9.
+  src: src/allegro-archiwum/7611417798.yml

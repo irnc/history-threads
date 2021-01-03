@@ -12,6 +12,7 @@
     Panorama miasta - lata sześćdziesiąte (zdjęcie)
 
     Brzeg Niemna na wysokości Budynku Wodociągów Miejskich. Powyżej koszary dawnego 29 PAL (obecnie Straży Granicznej).
+  src: src/allegro-archiwum/8369026856.yml
 - resource:
     - https://archiwum.allegro.pl/oferta/grodno-panorama-miasta-i-brzeg-niemna-i8369028424.html
   images:
@@ -25,3 +26,4 @@
     Brzeg Niemna na wysokości starego cmentarza katolickiego.
 
     Здымак з боку Румлёва на другі завулак Белуша
+  src: src/allegro-archiwum/8369028424.yml

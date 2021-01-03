@@ -8,6 +8,7 @@
     - Новы замак
   inscription:
     - Zamek Batorego
+  src: src/allegro-archiwum/8353664561.yml
 - resource:
     - https://archiwum.allegro.pl/oferta/pocztowka-grodno-i8428874939.html
   images:
@@ -18,3 +19,4 @@
   threads:
     - Altes Schloss
     - Стары замак
+  src: src/allegro-archiwum/8428874939.yml

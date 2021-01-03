@@ -4,3 +4,8 @@
     - площадь Тизенгауза, 4б
     - плошча Тызенгаўза, 4б
     - Дом лясной адміністрацыі
+  facebook:
+    pathname: /susanin.grodno/posts/2893801830659732
+    query: []
+    note: TODO improve FacebookEnhancer to handle this resource
+  src: src/2020/01/2020-01-29-tyzengaza-4b.yml
